@@ -100,3 +100,26 @@ body {
   color: var(--white);
   font-size: 2.6em;
 }
+
+.about {
+  padding: 6rem 1.5rem 2.1rem;
+  text-align: center;
+}
+
+.about__image {
+  width: 100%;
+}
+
+.about__text-container {
+  padding: 1.85rem 1rem;
+}
+
+.about__title {
+  margin: 1rem 0;
+  font-size: 2.2em;
+}
+
+.about__description {
+  color: var(--darkGrey);
+  line-height: 1.7;
+}
