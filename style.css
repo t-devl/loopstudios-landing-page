@@ -24,5 +24,49 @@ body {
 
 .title {
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2.6rem 1.5rem 3.6rem;
+  background-image: url("images/mobile/image-hero.jpg");
+  background-size: cover;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 148px;
+}
+
+.header__nav-toggle {
+  display: flex;
+  background: none;
+  border: none;
+}
+
+.header__nav-list {
+  display: none;
+  list-style: none;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.header__title {
+  padding: 1.5rem;
+  margin: auto 0;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-size: 2.6em;
 }

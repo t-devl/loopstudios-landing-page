@@ -13,17 +13,36 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
-      <h1>Immersive experiences that deliver</h1>
+    <header class="header">
+      <div class="header__top">
+        <img class="header__logo" src="images/logo.svg" />
+        <nav class="header__nav">
+          <button class="header__nav-toggle">
+            <img
+              class="header__nav-toggle-icon"
+              src="images/icon-hamburger.svg"
+            />
+          </button>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Careers</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Events</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Products</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="header__title title">Immersive experiences that deliver</h1>
     </header>
     <section>
       <h2>The leader in interactive VR</h2>
