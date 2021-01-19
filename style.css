@@ -32,6 +32,10 @@ body {
   text-transform: uppercase;
 }
 
+.block {
+  display: block;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -122,4 +126,67 @@ body {
 .about__description {
   color: var(--darkGrey);
   line-height: 1.7;
+}
+
+.creations {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "gallery"
+    "button";
+  row-gap: 2.1rem;
+  padding: 2.1rem 1.5rem 6rem;
+}
+
+.creations__title {
+  grid-area: title;
+  margin-bottom: 0.9rem;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.creations__gallery {
+  grid-area: gallery;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.creations__gallery-item {
+  position: relative;
+}
+
+.creations__gallery-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.creations__gallery-title {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  color: var(--white);
+  font-size: 1.6em;
+  z-index: 2;
+}
+
+.creations__gallery-image {
+  display: block;
+  width: 100%;
+}
+
+.creations__button {
+  grid-area: button;
+  padding: 0.6rem 2.3rem;
+  margin: auto;
+  border: 1px solid black;
+  background: none;
+  font-size: 0.95em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
