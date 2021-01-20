@@ -190,3 +190,43 @@ body {
   letter-spacing: 5px;
   text-transform: uppercase;
 }
+
+.footer {
+  padding: 3.6rem 1.5rem 3.9rem;
+  background-color: black;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 148px;
+}
+
+.footer__nav-list {
+  margin: 2.1rem 0 3rem;
+  list-style: none;
+}
+
+.footer__nav-item {
+  margin: 1.4rem 0;
+}
+
+.footer__nav-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.footer__media-item {
+  margin: 0 0.5rem;
+}
+
+.footer__copyright {
+  color: var(--darkGrey);
+}
