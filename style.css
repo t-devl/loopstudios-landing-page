@@ -238,3 +238,47 @@ body {
     font-size: 1.8em;
   }
 }
+
+@media (min-width: 850px) {
+  .no-scroll {
+    overflow: auto;
+  }
+
+  .header {
+    padding: 4rem 11.4% 2rem;
+    background-image: url("images/desktop/image-hero.jpg");
+  }
+
+  .header__logo {
+    width: auto;
+  }
+
+  .header__nav-toggle {
+    display: none;
+  }
+
+  .header__nav-list {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+    background: none;
+    font-family: "Alata", sans-serif;
+    font-size: 1em;
+    text-transform: none;
+  }
+
+  .header__nav-list--hidden {
+    display: flex;
+  }
+
+  .header__nav-item {
+    margin: 0 0.9rem;
+  }
+
+  .header__title {
+    width: 655px;
+    padding: 2rem;
+    font-size: 4.5em;
+  }
+}
