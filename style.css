@@ -231,3 +231,9 @@ body {
 .footer__copyright {
   color: var(--darkGrey);
 }
+
+@media (max-width: 350px) {
+  .header__title {
+    font-size: 1.8em;
+  }
+}
