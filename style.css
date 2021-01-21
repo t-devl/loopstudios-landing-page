@@ -281,4 +281,32 @@ body {
     padding: 2rem;
     font-size: 4.5em;
   }
+
+  .about {
+    position: relative;
+    padding: 10.2rem 11.4% 0;
+    margin-bottom: 9.2rem;
+    text-align: left;
+  }
+
+  .about__image {
+    display: block;
+    width: 99%;
+    max-width: 731px;
+  }
+
+  .about__text-container {
+    position: absolute;
+    right: 11.4%;
+    bottom: -1px;
+    width: 532px;
+    padding: 5.5rem 0 1px 5.5rem;
+    background-color: var(--white);
+  }
+
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 3.2em;
+  }
 }
