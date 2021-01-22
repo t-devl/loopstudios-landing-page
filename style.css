@@ -309,4 +309,32 @@ body {
     margin-bottom: 1.5rem;
     font-size: 3.2em;
   }
+
+  .creations {
+    grid-template-areas:
+      "title button"
+      "gallery gallery";
+    row-gap: 4.1rem;
+    padding: 2.2rem 11.4% 11.4rem;
+  }
+
+  .creations__title {
+    font-size: 3.2em;
+    text-align: left;
+  }
+
+  .creations__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .creations__gallery-title {
+    left: 2.5rem;
+    bottom: 2rem;
+    font-size: 2.1em;
+  }
+
+  .creations__button {
+    margin: 0 0 auto auto;
+  }
 }
