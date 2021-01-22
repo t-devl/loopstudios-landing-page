@@ -99,6 +99,10 @@ body {
   color: var(--white);
 }
 
+.header__nav-link:hover {
+  text-decoration: underline;
+}
+
 .header__title {
   padding: 1.5rem;
   margin: auto 0;
@@ -217,6 +221,10 @@ body {
   text-decoration: none;
 }
 
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
 .footer__media {
   display: flex;
   justify-content: center;
@@ -227,6 +235,15 @@ body {
 
 .footer__media-item {
   margin: 0 0.5rem;
+}
+
+.footer__media-link {
+  display: block;
+  transition: 0.1s linear;
+}
+
+.footer__media-link:hover {
+  transform: translateY(-10px);
 }
 
 .footer__copyright {
