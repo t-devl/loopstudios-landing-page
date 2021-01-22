@@ -337,4 +337,46 @@ body {
   .creations__button {
     margin: 0 0 auto auto;
   }
+
+  .footer {
+    display: grid;
+    grid-template-areas:
+      "logo media"
+      "nav copyright";
+    row-gap: 1.5rem;
+    padding: 3rem 11.4% 3.6rem;
+    text-align: left;
+  }
+
+  .footer__logo {
+    grid-area: logo;
+  }
+
+  .footer__nav {
+    grid-area: nav;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    margin: 0;
+  }
+
+  .footer__nav-item {
+    margin: 0 2rem 0 0;
+  }
+
+  .footer__media {
+    grid-area: media;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .footer__media-item {
+    margin: 0 0.5rem;
+  }
+
+  .footer__copyright {
+    grid-area: copyright;
+    text-align: right;
+  }
 }
