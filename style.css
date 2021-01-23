@@ -27,6 +27,11 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
 .title {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -38,12 +43,16 @@ body {
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   padding: 2.6rem 1.5rem 3.6rem;
   background-image: url("images/mobile/image-hero.jpg");
   background-size: cover;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .header__top {
@@ -361,13 +370,16 @@ body {
   }
 
   .footer {
+    padding: 3rem 11.4% 3.6rem;
+    text-align: left;
+  }
+
+  .footer__content {
     display: grid;
     grid-template-areas:
       "logo media"
       "nav copyright";
     row-gap: 1.5rem;
-    padding: 3rem 11.4% 3.6rem;
-    text-align: left;
   }
 
   .footer__logo {
@@ -400,5 +412,15 @@ body {
   .footer__copyright {
     grid-area: copyright;
     text-align: right;
+  }
+}
+
+@media (min-width: 1551px) {
+  .header,
+  .about,
+  .creations,
+  .footer {
+    padding-left: 177px;
+    padding-right: 177px;
   }
 }
