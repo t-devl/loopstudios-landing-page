@@ -168,9 +168,10 @@ body {
 
 .creations__gallery-item {
   position: relative;
+  overflow: hidden;
 }
 
-.creations__gallery-item::after {
+.creations__gallery-link::after {
   content: "";
   position: absolute;
   top: 0;
@@ -178,6 +179,14 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.creations__gallery-link:hover::after {
+  background: none;
+}
+
+.creations__gallery-link:hover .creations__gallery-image {
+  transform: scale(1.2);
 }
 
 .creations__gallery-title {
@@ -192,6 +201,7 @@ body {
 .creations__gallery-image {
   display: block;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .creations__button {
