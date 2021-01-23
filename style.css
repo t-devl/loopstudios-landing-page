@@ -416,11 +416,19 @@ body {
 }
 
 @media (min-width: 1551px) {
+  body {
+    font-size: 20px;
+  }
+
   .header,
   .about,
   .creations,
   .footer {
     padding-left: 177px;
     padding-right: 177px;
+  }
+
+  .header__title {
+    width: 855px;
   }
 }
