@@ -197,6 +197,11 @@ body {
   text-transform: uppercase;
 }
 
+.creations__button:hover {
+  background-color: black;
+  color: var(--white);
+}
+
 .footer {
   padding: 3.6rem 1.5rem 3.9rem;
   background-color: black;
